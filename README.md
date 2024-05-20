@@ -1,30 +1,141 @@
-# React + TypeScript + Vite
+# Interview Speedup Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project template is designed to help you quickly set up a modern web application using React, Vite, Vitest, and TypeScript. It's ideal for coding interviews, hackathons, and rapid prototyping.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: A JavaScript library for building user interfaces.
+- **Vite**: A fast build tool that leverages ES modules.
+- **Vitest**: A Vite-native unit testing framework.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+Make sure you have the following installed:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- [Node.js](https://nodejs.org/) (version 14.18.0 or later)
+- [npm](https://www.npmjs.com/) (version 6.14.0 or later) or [yarn](https://yarnpkg.com/) (version 1.22.0 or later)
+
+### Installation
+
+1. **Clone the repository**:
+
+   ```
+   git clone https://github.com/Ismael-devTR/interview-template-speedup.git
+   cd interview-speedup-template
+   ```
+
+2. **Install dependencies**:
+
+   Using npm:
+
+   ```
+   npm install
+   ```
+
+   Using yarn:
+
+   ```
+   yarn install
+   ```
+
+### Running the Development Server
+
+To start the development server, run:
+
+Using npm:
+
+```
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Using yarn:
+
+```
+yarn dev
+```
+
+Open your browser and navigate to `http://localhost:3000`. You should see your React app running.
+
+### Building for Production
+
+To create a production build, run:
+
+Using npm:
+
+```
+npm run build
+```
+
+Using yarn:
+
+```
+yarn build
+```
+
+The output will be in the `dist` directory.
+
+### Running Tests
+
+To run the tests, use:
+
+Using npm:
+
+```
+npm run test
+```
+
+Using yarn:
+
+```
+yarn test
+```
+
+This will run all the tests using Vitest.
+
+## Project Structure
+
+```
+interview-speedup-template/
+├── public/                 # Static assets
+│   └── index.html          # Main HTML file
+├── src/                    # Source files
+│   ├── assets/             # Images, fonts, etc.
+│   ├── components/         # React components
+│   ├── App.tsx             # Main App component
+│   ├── index.tsx           # Entry point
+│   └── main.tsx            # Vite main file
+├── tests/                  # Test files
+├── .gitignore              # Git ignore file
+├── index.html              # HTML template
+├── package.json            # NPM/Yarn configuration
+├── tsconfig.json           # TypeScript configuration
+├── vite.config.ts          # Vite configuration
+└── README.md               # This file
+```
+
+## Configuration
+
+### Vite
+
+Vite configuration is located in `vite.config.ts`. You can modify this file to change the Vite settings according to your needs.
+
+### TypeScript
+
+TypeScript configuration is in `tsconfig.json`. Adjust the compiler options as needed.
+
+## Contributing
+
+If you would like to contribute, please fork the repository and use a feature branch. Pull requests are welcome.
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature-name`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature-name`)
+5. Create a new Pull Request
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
