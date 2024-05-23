@@ -23,8 +23,8 @@ Make sure you have the following installed:
 1. **Clone the repository**:
 
    ```
-   git clone https://github.com/Ismael-devTR/interview-template-speedup.git
-   cd interview-speedup-template
+   git clone https://github.com/Ismael-devTR/Interview-template-react.git
+   cd Interview-template-react
    ```
 
 2. **Install dependencies**:
