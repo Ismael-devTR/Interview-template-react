@@ -107,7 +107,7 @@ interview-speedup-template/
 │   ├── App.tsx             # Main App component
 │   ├── index.tsx           # Entry point
 │   └── main.tsx            # Vite main file
-├── tests/                  # Test files
+├── test/                  # Test files
 ├── .gitignore              # Git ignore file
 ├── index.html              # HTML template
 ├── package.json            # NPM/Yarn configuration
