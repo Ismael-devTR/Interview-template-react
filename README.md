@@ -1,4 +1,4 @@
-# Interview Speedup Template
+# Interview-template-react
 
 This project template is designed to help you quickly set up a modern web application using React, Vite, Vitest, and TypeScript. It's ideal for coding interviews, hackathons, and rapid prototyping.
 
